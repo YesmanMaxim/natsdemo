@@ -9,5 +9,3 @@ services:
       - 8222:8222
     environment:
       - NATS=10s
-    volumes:
-      - /Users/yesmanmx/Work/iota/Projects/natsdemo/nats-server.conf:/bitnami/nats/conf/nats-server.conf:ro
