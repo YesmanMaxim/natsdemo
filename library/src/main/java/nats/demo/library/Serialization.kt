@@ -1,6 +1,7 @@
 package nats.demo.library
 
 import io.nats.client.Message
+import io.nats.client.api.KeyValueEntry
 import java.io.ByteArrayInputStream
 import java.io.ByteArrayOutputStream
 import java.io.ObjectInputStream
@@ -17,4 +18,5 @@ object Serialization {
     } as T
 
     fun <T> Message.body(): T = decode(data)
+    fun <T> KeyValueEntry.body(): T = decode(value)
 }
