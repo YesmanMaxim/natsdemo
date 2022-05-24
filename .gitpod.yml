@@ -1,0 +1,4 @@
+image: gitpod/gitpod/workspace-java-17
+tasks:
+  - name: nats server
+    command: docker-compose up
